@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+    background-color: rgb(240, 179, 179);
+}
+
+p{
+    font-size: 2.5rem;
+}
+
+.usuario{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 35px;
+    border: solid 2px rgb(185, 33, 33);
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    }
+
+.detalle{
+    margin-left: 10%;
+}
+
+input{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.ingreso{
+    margin-top: 35px;
+    font-size: 1rem;
+}
+
+#lista-libros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    margin: 35px;
+    border-radius: 40px 20px;
+    cursor:pointer;
+}
+
+.imagen-libro {
+    max-width: 350px; 
+    height: 450px; 
+    margin-bottom: 20px;
+}
+
+.dark{
+    background-color: black;
+    color: rgb(82, 82, 231);
+}
+
+.light{
+    background-color: rgb(190, 190, 234);
+    color: black;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat 3, 1fr ;
+    gap: 10px; 
+}
+
+.card {
+    margin: 45px;
+}
+
+#mode {
+    position: relative; 
+    top: -20px;
+}
+
+
+

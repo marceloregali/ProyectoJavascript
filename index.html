@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario Oficial Toyota</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="principal" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center light">
+        <div id="secundario" class="col-md-5 p-lg-5 mx-auto my-5">
+            <button id="mode" class="btn btn-outline-secondary" href="#">Dark Mode</button>
+            <div class="formularioIngreso">
+                <input id="usuario" class="form-control mb-3" placeholder="Usuario" type="text">
+                <input id="contrasenaIngreso" class="form-control mb-3" placeholder="Contraseña" type="password">
+                <button id="solicitarIngreso" class="btn btn-primary btn-block">Ingresar</button>
+                <small id="mensajeError" class="text-danger"></small>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Concesionario Oficial Toyota</h1>
+        <div id="misprods" class="row"></div>
+    </div>
+
+    <section class="detalle">
+        <h4>Tu carrito</h4>
+        <ul id="lista-carrito"></ul>
+        <p id="total">Total a pagar: $0.00</p>
+        <button id="borrar-carrito" class="btn btn-danger">Borrar Carrito</button>
+        <button id="confirmar-compra" class="btn btn-success">Confirmar Compra</button>
+    </section>
+
+    <section id="lista-libros"></section>
+
+    <div class="usuario">
+        <footer>
+            <section>
+                <h3>Suscríbete</h3>
+                <form id="formulario">
+                    <label for="nombre">Nombre
+                        <input type="text" name="nombre" id="nombre" placeholder="Marcelo">
+                    </label>
+                    <label for="contrasena">Contraseña
+                        <input id="contrasenaSuscripcion" placeholder="Contraseña" type="password">
+                    </label>
+                    <input type="submit" value="Enviar" class="btn btn-success">
+                    <input type="button" value="Borrar" class="btn btn-danger" onclick="borrarCampo()">
+                </form>
+            </section>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./proyecto.js"></script>
+    <script src="./productos.js"></script>
+    <script src="./style.css"></script>
+</body>
+</html>
